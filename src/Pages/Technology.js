@@ -10,7 +10,7 @@ export const Technology = () => {
 
     useEffect(()=>{
       const getData=async()=>{
-          const data=await axios.get('http://localhost:5000/');
+          const data=await axios.get('https://blog-project-back-node.herokuapp.com/api/bolly');
           setDetail(data.data);
       }
       getData();
